@@ -1,0 +1,107 @@
+
+/* .hero{
+    background-color: var(--bg-color);
+    background: rgb(0,116,217);
+background: linear-gradient(0deg, rgba(0,116,217,1) 0%, rgba(251,252,252,1) 100%);
+} */
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+}
+
+.h1{
+    font-size: 70px;
+    font-weight: bold;
+    width: 100%;
+    line-height: 1;
+    /* color: var(--gray-color); */
+}
+
+.p{
+    /* color: var(--gray-color); */
+    margin-top: var(--pd-top);
+    width: 85%;
+    line-height: var(--line-height);
+    font-size: var(--size-p);
+    font-weight: var(--weight-p);
+}
+
+.resume{
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    margin-top: var(--pd-top);
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    transition: .5s ease;
+    box-shadow: 0 0 15px var(--main-color);
+}
+
+.icon{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.resume:hover{
+    background-color: transparent;
+    /* color: black; */
+}
+
+.icon_lamp{
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    bottom: 40px;
+    right: -150px;
+}
+
+
+@media screen and (max-width: 992px){
+
+    .hero{
+    margin-top: -1px;
+}
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        position: relative;
+    }
+
+    .h1{
+        font-size: 50px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .p{
+        margin-top: var(--pd-top);
+        width: 100%;
+        text-align: center;
+    }
+
+    .resume{
+        margin-left: 28%;
+    }
+
+    .icon_lamp{
+        display: none;
+    }
+}

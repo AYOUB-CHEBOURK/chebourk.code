@@ -1,0 +1,187 @@
+/* nav {
+  width: 100%;
+  background-color: var(--bg-color);
+} */
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+nav .container .logo {
+  /* color: black; */
+  font-size: 30px;
+  font-weight: bold;
+}
+
+nav .container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+nav .container .icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+nav .container ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 550;
+  letter-spacing: 1px;
+  color: black;
+  transition: .5s linear;
+  z-index: 10;
+  cursor: pointer;
+  position: relative;
+}
+
+nav .container ul li a::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 90%;
+  height: 2px;
+  background-color: var(--main-color);
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.8s;
+}
+
+nav .container ul li a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1.1);
+}
+
+nav .container ul li a:hover {
+  color: var(--main-color);
+}
+
+nav .container ul .focus {
+  color: var(--main-color);
+}
+
+nav .container ul .focus::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  height: 2px;
+  background-color: var(--main-color);
+  transform-origin: right;
+  transform: scaleX(1);
+  transition: transform 0.8s;
+}
+
+nav .container ul .focus:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+nav .container .iconBars,
+nav .container .iconClose {
+  color: var(--p-color);
+  font-size: 25px;
+  display: none;
+  transition: .5s linear;
+}
+
+nav .container i {
+  display: none;
+}
+
+nav .container .iconBars:hover,
+nav .container .iconClose:hover {
+  color: var(--main-color);
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+  nav .container .nav ul {
+    display: none;
+  }
+
+  nav .container i {
+    display: block;
+  }
+
+  nav .container .hideMenu ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav .container .hideMenu ul .focus {
+    color: white;
+  }
+
+  nav .container ul .focus::after {
+    background-color: white;
+  }
+
+  nav .container button {
+    width: 100%;
+  }
+
+  nav .container .notShow .iconBars {
+    display: block;
+  }
+
+  nav .container .notShow .iconClose {
+    display: none;
+  }
+
+  nav .container .show .hideMenu .iconBars {
+    display: none;
+  }
+
+  nav .container .show .iconClose {
+    display: block;
+  }
+
+  .nav{
+    background-color: var(--main-color);
+    position: absolute;
+    top: 9.5vh;
+    left: 0;
+    opacity: 0;
+    height: 0px;
+    width: 100%;
+    z-index: 99;
+    transition: 0.8s;
+  }
+
+  .hideMenu{
+    background-color: var(--main-color);
+    display: block;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    top: 9.5vh;
+    left: 0;
+    opacity: 1;
+    height: 255px;
+    width: 100%;
+    z-index: 99;
+    transition: 0.9s;
+  }
+
+  nav .container .hideMenu ul li {
+    padding: 10px
+  }
+
+  .iconMedia {
+    display: none;
+  }
+
+}
