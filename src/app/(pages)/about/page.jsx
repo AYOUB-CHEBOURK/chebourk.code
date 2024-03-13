@@ -3,10 +3,10 @@
 
 import styles from "./about.module.css"
 import about_img from "../../../../public/about-img.jpg"
-import html from "../../../../public/Html5.svg"
-import css from "../../../../public/css3.svg"
-import javascript from "../../../../public/javascript.svg"
-import bootstrap from "../../../../public/bootstrap.svg"
+// import html from "../../../../public/Html5.svg"
+// import css from "../../../../public/css3.svg"
+// import javascript from "../../../../public/javascript.svg"
+// import bootstrap from "../../../../public/bootstrap.svg"
 import react from "../../../../public/react.svg"
 import next from "../../../../public/next-js.svg"
 import Lottie from "lottie-react";
@@ -81,7 +81,7 @@ const About = () => {
             </div>
           </div>
         </motion.div>
-        <div className={styles.skills}>
+        {/* <div className={styles.skills}>
           <h1 className={styles.skills_h1} data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="1000"> skills</h1>
           <p className={styles.skills_p} data-aos="zoom-in-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
             Passionate Front End Developer with expertise in modern web technologies and Develope highly interactive Front end / User Interfaces web application.
@@ -98,7 +98,7 @@ const About = () => {
               ))}
             </div>
           </div>
-        </div>
+        </div> */}
         <Service/>
       </div>
     </div>
