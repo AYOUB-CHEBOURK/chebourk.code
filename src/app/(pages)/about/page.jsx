@@ -38,12 +38,12 @@ const About = () => {
   ]
 
   const skillsData = [
-    { id: 1, title: "Html5", icon: html },
-    { id: 2, title: "Css3", icon: css },
-    { id: 3, title: "Bootstrap", icon: bootstrap },
-    { id: 4, title: "Java Script", icon: javascript },
-    { id: 5, title: "React Js", icon: react },
-    { id: 6, title: "Next Js", icon: next },
+    // { id: 1, title: "Html5", icon: html },
+    { id: 1, title: "Css3", icon: css },
+    { id: 2, title: "Bootstrap", icon: bootstrap },
+    { id: 3, title: "Java Script", icon: javascript },
+    { id: 4, title: "React Js", icon: react },
+    { id: 5, title: "Next Js", icon: next },
   ]
 
 
