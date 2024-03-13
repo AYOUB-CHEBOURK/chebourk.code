@@ -50,7 +50,7 @@
 }
 
 .service .container .box p{
-    width: 250px;
+    width: 300px;
     text-align: center;
     line-height: var(--line-height);
     font-size: var(--size-p);

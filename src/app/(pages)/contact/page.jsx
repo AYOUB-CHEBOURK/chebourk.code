@@ -22,8 +22,7 @@ const Contact = () => {
     emailjs.sendForm('service_70zbqwz', 'template_7fzjexl', form.current, 'jXjEIFp2QgXaQac3D')
       .then((result) => {
         console.log(result.text);
-        showAlert();
-        alert("Your message has been sent"); // Use alert instead of Alert
+        alert("Your Message sent  successful ") // Use alert instead of Alert
         window.location.reload()
       }, (error) => {
         setError(error.text);

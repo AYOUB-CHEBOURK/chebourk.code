@@ -33,7 +33,7 @@ const NavBar = () => {
 
     const iconMedia = [
         { id: 1, img: facebook , link_url: "https://www.facebook.com/ayoub.chbourk/" },
-        { id: 2, img: instagram , link_url: "https://www.instagram.com/chebourk_111/" },
+        { id: 2, img: instagram , link_url: "https://www.instagram.com/chebourk.code/" },
         { id: 3, img: linkedin , link_url: "https://www.linkedin.com/in/che-bourk-947406273/" },
         { id: 4, img: github_dark , link_url: "https://github.com/AYOUB-CHEBOURK?tab=repositories" },
     ]
