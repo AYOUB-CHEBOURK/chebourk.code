@@ -1,11 +1,11 @@
 "use client"
 import styles from "./footer.module.css"
 import logo from "../../../../public/logo.png"
-import logo_dark from "../../../../public/logo-dark.png"
-import facebook from "../../../../public/facebook.png"
-import instagram from "../../../../public/instagram.png"
-import linkedin from "../../../../public/linkedin.png"
-import github from "../../../../public/github-dark.png"
+// import logo_dark from "../../../../public/logo-dark.png"
+// import facebook from "../../../../public/facebook.png"
+// import instagram from "../../../../public/instagram.png"
+// import linkedin from "../../../../public/linkedin.png"
+// import github from "../../../../public/github-dark.png"
 import Image from "next/image"
 import Link from "next/link"
 import { useContext } from "react";
@@ -26,7 +26,7 @@ const Footer = () => {
     <div className={styles.footer}><hr className="hr"/>
         <div className="container">
             <div className={styles.content}>
-            <ul className={styles.iconMedia}>
+            {/* <ul className={styles.iconMedia}>
                 {iconMedia.map(({ img, link_url, id }) => (
                     <li key={id}>
                         <Link href={link_url} >
@@ -34,7 +34,7 @@ const Footer = () => {
                         </Link>
                     </li>
                 )) } 
-            </ul>
+            </ul> */}
             <p className={styles.p}> &copy; 2023 <span className={styles.span}>Chebourk</span> All Right Reserved</p>
             <Image src={mode === "dark" ? logo : logo_dark} alt="logo" width={150}/>
             </div>

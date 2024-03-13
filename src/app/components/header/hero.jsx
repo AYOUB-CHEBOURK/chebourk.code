@@ -3,10 +3,10 @@
 import styles from "./hero.module.css"
 import Image from "next/image"
 import hero_img from "../../../../public/hero-img.webp"
-import icon_lamp from "../../../../public/iconLamp.svg"
-import { FaRegFilePdf } from "react-icons/fa6";
+// import icon_lamp from "../../../../public/iconLamp.svg"
+// import { FaRegFilePdf } from "react-icons/fa6";
 import { motion } from "framer-motion"
-import { TypeAnimation } from 'react-type-animation';
+// import { TypeAnimation } from 'react-type-animation';
 import { useContext } from "react";
 import { ThemeContext } from "@/app/context/themeContext";
 
@@ -24,7 +24,7 @@ const Hero = () => {
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1.5 }}>
-      <div className={styles.hero}>
+      {/* <div className={styles.hero}>
         <div className="container">
           <div className={styles.content}>
             <Image src={hero_img} alt="image hero" className={styles.img} />
@@ -52,7 +52,7 @@ const Hero = () => {
             <Image src={icon_lamp} alt="image hero" className={styles.icon_lamp} />
           </div>
         </div>
-      </div>
+      </div> */}
     </motion.div>
   )
 }

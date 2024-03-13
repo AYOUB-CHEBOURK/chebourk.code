@@ -9,11 +9,11 @@ import { FaBars , FaX } from "react-icons/fa6";
 import Image from "next/image";
 import logo from "../../../../public/logo.png"
 import logo_dark from "../../../../public/logo-dark.png"
-import facebook from "../../../../public/facebook.png"
-import instagram from "../../../../public/instagram.png"
-import linkedin from "../../../../public/linkedin.png"
-import github_dark from "../../../../public/gitHub-dark.png"
-import DarkMode from "../section/darkMode";
+// import facebook from "../../../../public/facebook.png"
+// import instagram from "../../../../public/instagram.png"
+// import linkedin from "../../../../public/linkedin.png"
+// import github_dark from "../../../../public/gitHub-dark.png"
+// import DarkMode from "../section/darkMode";
 import { useContext } from "react";
 import { ThemeContext } from "@/app/context/themeContext";
 
@@ -62,7 +62,7 @@ const NavBar = () => {
                         )) } 
                     </ul>
                 </div>
-                <ul className="icons">
+                {/* <ul className="icons">
                     {iconMedia.map(({ img, link_url, id }) => (
                         <li key={id}>
                             <Link href={link_url} >
@@ -71,7 +71,7 @@ const NavBar = () => {
                         </li>
                     ))} 
                     <DarkMode/>
-                </ul>
+                </ul> */}
                 <i className={responsive ? "show" : "notShow"}>
                     <FaBars className="iconBars" onClick={setHideMenu}/>
                     <FaX className="iconClose" onClick={setHideMenu}/>
