@@ -5,7 +5,7 @@ import logo_dark from "../../../../public/logo-dark.png"
 import facebook from "../../../../public/facebook.png"
 import instagram from "../../../../public/instagram.png"
 import linkedin from "../../../../public/linkedin.png"
-// import github from "../../../../public/github-dark.png"
+import github from "../../../../public/github.png"
 import Image from "next/image"
 import Link from "next/link"
 import { useContext } from "react";
@@ -19,7 +19,7 @@ const Footer = () => {
         { id: 1, img: facebook , link_url: "https://www.facebook.com/ayoub.chbourk/" },
         { id: 2, img: instagram , link_url: "https://www.instagram.com/chebourk.code/" },
         { id: 3, img: linkedin , link_url: "https://www.linkedin.com/in/che-bourk-947406273/" },
-        // { id: 4, img: github, link_url: "https://github.com/AYOUB-CHEBOURK?tab=repositories" },
+        { id: 4, img: github, link_url: "https://github.com/AYOUB-CHEBOURK?tab=repositories" },
     ]
 
   return (

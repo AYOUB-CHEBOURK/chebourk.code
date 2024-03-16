@@ -14,11 +14,6 @@ const Hero = () => {
 
   const {mode } = useContext(ThemeContext)
 
-  const download_cv = () => {
-    download.href = canvas.toDataURL(hero_img);
-    console.log(download_cv)
-  }
-
   return (
     <motion.div
       initial={{ y: "-200vh" }}
@@ -47,7 +42,7 @@ const Hero = () => {
                 />
               </h1>
               <p className={styles.p}>As a skilled Front-End Developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects and articles, showcasing my expertise in React.js and web development.</p>
-              <button className={styles.resume} style={mode === "dark" ? {color: "white"} : {color: "black"}}>resume <FaRegFilePdf className={styles.icon} onClick={download_cv}/></button>
+              <button className={styles.resume} style={mode === "dark" ? {color: "white"} : {color: "black"}}>resume <FaRegFilePdf className={styles.icon}/></button>
             </div>
             <Image src={icon_lamp} alt="image hero" className={styles.icon_lamp} />
           </div>

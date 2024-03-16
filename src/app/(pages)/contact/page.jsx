@@ -42,7 +42,7 @@ const Contact = () => {
             <Lottie animationData={animation} loop={true} className={styles.animation} />
             <div className={styles.form_contact}>
               <form className={styles.form} ref={form} onSubmit={sendEmail}>
-                <input className={styles.main_input} type='text' name='name' placeholder='Your Name' required autoFocus></input>
+                <input className={styles.main_input} type='text' name='name' placeholder='Your Name' required></input>
                 <input className={styles.main_input} type='email' name='email' placeholder='Your Email' required></input>
                 <textarea className={styles.textarea_input} name="message" placeholder='Your Message'></textarea>
                 {error && <p>{error}</p>}

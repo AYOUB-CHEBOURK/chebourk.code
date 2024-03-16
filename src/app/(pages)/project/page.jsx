@@ -38,9 +38,9 @@ const Project = () => {
       </motion.div>
       <div className={styles.content}>
         <motion.div
-          initial={{ y: "-350vh" }}
+          initial={{ y: "-200vh" }}
           animate={{ y: "0%" }}
-          transition={{ duration: 1.2 }} className={styles.motion}>
+          transition={{ duration: 1.5 }} className={styles.motion}>
           <div className={styles.box_ecom} style={mode === "dark" ? {border: "2px solid white" , boxShadow: "15px 14px 0px -5px white"} : {border: "var(--border)" , boxShadow: "var(--box-shadow)"}}>
             <Image src={image1} alt="image project" className={styles.img_ecom} />
             <div className={styles.text}>

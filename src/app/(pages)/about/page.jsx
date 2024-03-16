@@ -26,15 +26,9 @@ const About = () => {
   const { mode } = useContext(ThemeContext)
 
   const counterData = [
-    {
-      id: 1, icon: <FaGratipay />, number: 90, title: "happy clients"
-    },
-    {
-      id: 2, icon: <FaCheck />, number: 10, title: "projects completed"
-    },
-    {
-      id: 4, icon: <FaCode />, number: 1446, title: "liens of code"
-    },
+    {id: 1, icon: <FaGratipay />, number: 90, title: "happy clients"},
+    {id: 2, icon: <FaCheck />, number: 10, title: "projects completed"},
+    {id: 4, icon: <FaCode />, number: 1446, title: "liens of code"}
   ]
 
   const skillsData = [
@@ -58,7 +52,7 @@ const About = () => {
           <div className={styles.content}>
             <div className={styles.text}>
               <p className={styles.p}>I'm Ayoub Chebourk 20 ans I from Morocco, and Im an experienced front-end developer with 2 years of expertise and a deep understanding of
-                using React JS, Next Js.
+                using React Js, Next Js.
               </p>
               <p className={styles.p}>I will convert your PSD or Figma design
                 as per your requirement, which will be completely mobile-friendly and functional.
@@ -87,8 +81,9 @@ const About = () => {
             Passionate Front End Developer with expertise in modern web technologies and Develope highly interactive Front end / User Interfaces web application.
           </p>
           <div className={styles.skills_content}>
-            <Lottie animationData={animation} loop={true} className={styles.animation} 
-            data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1000"/>
+            <Lottie animationData={animation} loop={true} className={styles.animation}
+              data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1000" 
+            />
             <div className={styles.icons_skills} data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1000">
               {skillsData.map((items, id) => (
                 <div className={styles.icon_skills} key={id}>
@@ -99,7 +94,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <Service/>
+        <Service />
       </div>
     </div>
   )
