@@ -38,9 +38,9 @@ const Project = () => {
       </motion.div>
       <div className={styles.content}>
         <motion.div
-          initial={{ y: "-200vh" }}
+          initial={{ y: "200vh" }}
           animate={{ y: "0%" }}
-          transition={{ duration: 1.5 }} className={styles.motion}>
+          transition={{ duration: 1.8 }} className={styles.motion}>
           <div className={styles.box_ecom} style={mode === "dark" ? {border: "2px solid white" , boxShadow: "15px 14px 0px -5px white"} : {border: "var(--border)" , boxShadow: "var(--box-shadow)"}}>
             <Image src={image1} alt="image project" className={styles.img_ecom} />
             <div className={styles.text}>
@@ -54,7 +54,7 @@ const Project = () => {
           <div className={styles.boxes}>
             {projects.slice(0, 2).map((items, id) => (
               <div className={styles.box} key={id} style={mode === "dark" ? {border: "2px solid white" , boxShadow: "15px 14px 0px -5px white"} : {border: "var(--border)" , boxShadow: "var(--box-shadow)"}}
-              data-aos="fade-up" data-aos-duration="2000">
+              data-aos="fade-up" data-aos-duration="1000">
                 <div className={styles.img_hover}>
                   <Image src={items.img} alt="image project" className={styles.img} />
                 </div>
@@ -70,7 +70,7 @@ const Project = () => {
           </div>
         </motion.div>
         <div className={styles.box_ecom} style={mode === "dark" ? {border: "2px solid white" , boxShadow: "15px 14px 0px -5px white"} : {border: "var(--border)" , boxShadow: "var(--box-shadow)"}}
-        data-aos="fade-up" data-aos-duration="2000">
+        data-aos="fade-up" data-aos-duration="1000">
           <Image src={image6} alt="image project" className={styles.img_ecom} />
           <div className={styles.text}>
             <h2 className={styles.h2}>Blog health News Web Site</h2>
@@ -83,7 +83,7 @@ const Project = () => {
         <div className={styles.boxes}>
           {projects.slice(2, 4).map((items, id) => (
             <div className={styles.box} key={id} style={mode === "dark" ? {border: "2px solid white" , boxShadow: "15px 14px 0px -5px white"} : {border: "var(--border)" , boxShadow: "var(--box-shadow)"}}
-            data-aos="fade-up" data-aos-duration="2000">
+            data-aos="fade-up" data-aos-duration="1000">
               <div className={styles.img_hover}>
                 <Image src={items.img} alt="image project" className={styles.img} />
               </div>
